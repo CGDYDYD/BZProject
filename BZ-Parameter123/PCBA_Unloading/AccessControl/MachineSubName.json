@@ -1,0 +1,38 @@
+{
+  "Access_Control_with_MES": "FALSE",
+  "Project_Code": "H39",
+  "Automatically_Sign_out": "5",
+  "Site": "ITKS",
+  "Prod_Type": "Common",
+  "Line": "1",
+  "Station": "P28",
+  "Machine": "1",
+  "Language": "English",
+  "General_Config": {
+    "Site": [
+      "ITKS",
+      "ITJX",
+      "ITBG"
+    ],
+    "Prod_Type": [
+      "E-SKU",
+      "M-SKU",
+      "Normal(E/M)",
+      "Common"
+    ],
+    "Line": [
+      "1"
+    ],
+    "Station": [
+      "P28"
+    ],
+    "Machine": [
+      "1"
+    ],
+    "Language": [
+      "简体中文",
+      "English",
+      "Tiếng Việt"
+    ]
+  }
+}

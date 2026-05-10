@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCardPar xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CardPar>
+    <CardNum>0</CardNum>
+    <FirstNum>0</FirstNum>
+    <Total>0</Total>
+    <MainCard>false</MainCard>
+    <CardOpen>false</CardOpen>
+  </CardPar>
+  <CardPar>
+    <CardNum>0</CardNum>
+    <CardType>GEN</CardType>
+    <Vendor>固高GEN</Vendor>
+    <FirstNum>1</FirstNum>
+    <Total>6</Total>
+    <ParmPath>+GTS_Config\gtn_core1.cfg</ParmPath>
+    <MainCard>true</MainCard>
+    <CardOpen>false</CardOpen>
+    <ErrorInfo />
+  </CardPar>
+  <CardPar>
+    <CardNum>1</CardNum>
+    <CardType>GENEX</CardType>
+    <Vendor>固高GEN</Vendor>
+    <FirstNum>1</FirstNum>
+    <Total>256</Total>
+    <ParmPath>+GTS_Config\gtn_core1.cfg</ParmPath>
+    <MainCard>false</MainCard>
+    <CardOpen>false</CardOpen>
+    <ErrorInfo />
+  </CardPar>
+  <CardPar>
+    <CardNum>2</CardNum>
+    <CardType>GENEX</CardType>
+    <Vendor>固高GEN</Vendor>
+    <FirstNum>1</FirstNum>
+    <Total>366</Total>
+    <ParmPath>+GTS_Config\gtn_core1.cfg</ParmPath>
+    <MainCard>false</MainCard>
+    <CardOpen>false</CardOpen>
+    <ErrorInfo />
+  </CardPar>
+  <CardPar>
+    <CardNum>0</CardNum>
+    <CardType>GENEX</CardType>
+    <Vendor>固高</Vendor>
+    <FirstNum>0</FirstNum>
+    <Total>15</Total>
+    <MainCard>false</MainCard>
+    <CardOpen>false</CardOpen>
+    <ErrorInfo />
+  </CardPar>
+  <CardPar>
+    <CardNum>0</CardNum>
+    <CardType />
+    <Vendor />
+    <FirstNum>0</FirstNum>
+    <Total>0</Total>
+    <ParmPath />
+    <MainCard>false</MainCard>
+    <CardOpen>false</CardOpen>
+    <ErrorInfo />
+  </CardPar>
+  <CardPar>
+    <CardNum>0</CardNum>
+    <CardType />
+    <Vendor />
+    <FirstNum>0</FirstNum>
+    <Total>0</Total>
+    <ParmPath />
+    <MainCard>false</MainCard>
+    <CardOpen>false</CardOpen>
+    <ErrorInfo />
+  </CardPar>
+  <CardPar>
+    <CardNum>0</CardNum>
+    <CardType />
+    <Vendor />
+    <FirstNum>0</FirstNum>
+    <Total>0</Total>
+    <ParmPath />
+    <MainCard>false</MainCard>
+    <CardOpen>false</CardOpen>
+    <ErrorInfo />
+  </CardPar>
+  <CardPar>
+    <CardNum>0</CardNum>
+    <CardType />
+    <Vendor />
+    <FirstNum>0</FirstNum>
+    <Total>0</Total>
+    <ParmPath />
+    <MainCard>false</MainCard>
+    <CardOpen>false</CardOpen>
+    <ErrorInfo />
+  </CardPar>
+  <CardPar>
+    <CardNum>0</CardNum>
+    <CardType />
+    <Vendor />
+    <FirstNum>0</FirstNum>
+    <Total>0</Total>
+    <ParmPath />
+    <MainCard>false</MainCard>
+    <CardOpen>false</CardOpen>
+    <ErrorInfo />
+  </CardPar>
+  <CardPar>
+    <CardNum>0</CardNum>
+    <CardType />
+    <Vendor />
+    <FirstNum>0</FirstNum>
+    <Total>0</Total>
+    <ParmPath />
+    <MainCard>false</MainCard>
+    <CardOpen>false</CardOpen>
+    <ErrorInfo />
+  </CardPar>
+  <CardPar>
+    <CardNum>0</CardNum>
+    <CardType />
+    <Vendor />
+    <FirstNum>0</FirstNum>
+    <Total>0</Total>
+    <ParmPath />
+    <MainCard>false</MainCard>
+    <CardOpen>false</CardOpen>
+    <ErrorInfo />
+  </CardPar>
+  <CardPar>
+    <CardNum>0</CardNum>
+    <CardType />
+    <Vendor />
+    <FirstNum>0</FirstNum>
+    <Total>0</Total>
+    <ParmPath />
+    <MainCard>false</MainCard>
+    <CardOpen>false</CardOpen>
+    <ErrorInfo />
+  </CardPar>
+  <CardPar>
+    <CardNum>0</CardNum>
+    <CardType />
+    <Vendor />
+    <FirstNum>0</FirstNum>
+    <Total>0</Total>
+    <ParmPath />
+    <MainCard>false</MainCard>
+    <CardOpen>false</CardOpen>
+    <ErrorInfo />
+  </CardPar>
+  <CardPar>
+    <CardNum>0</CardNum>
+    <CardType />
+    <Vendor />
+    <FirstNum>0</FirstNum>
+    <Total>0</Total>
+    <ParmPath />
+    <MainCard>false</MainCard>
+    <CardOpen>false</CardOpen>
+    <ErrorInfo />
+  </CardPar>
+  <CardPar>
+    <CardNum>0</CardNum>
+    <CardType />
+    <Vendor />
+    <FirstNum>0</FirstNum>
+    <Total>0</Total>
+    <ParmPath />
+    <MainCard>false</MainCard>
+    <CardOpen>false</CardOpen>
+    <ErrorInfo />
+  </CardPar>
+  <CardPar>
+    <CardNum>0</CardNum>
+    <CardType />
+    <Vendor />
+    <FirstNum>0</FirstNum>
+    <Total>0</Total>
+    <ParmPath />
+    <MainCard>false</MainCard>
+    <CardOpen>false</CardOpen>
+    <ErrorInfo />
+  </CardPar>
+  <CardPar>
+    <CardNum>0</CardNum>
+    <CardType />
+    <Vendor />
+    <FirstNum>0</FirstNum>
+    <Total>0</Total>
+    <ParmPath />
+    <MainCard>false</MainCard>
+    <CardOpen>false</CardOpen>
+    <ErrorInfo />
+  </CardPar>
+  <CardPar>
+    <CardNum>0</CardNum>
+    <CardType />
+    <Vendor />
+    <FirstNum>0</FirstNum>
+    <Total>0</Total>
+    <ParmPath />
+    <MainCard>false</MainCard>
+    <CardOpen>false</CardOpen>
+    <ErrorInfo />
+  </CardPar>
+  <CardPar>
+    <CardNum>0</CardNum>
+    <CardType />
+    <Vendor />
+    <FirstNum>0</FirstNum>
+    <Total>0</Total>
+    <ParmPath />
+    <MainCard>false</MainCard>
+    <CardOpen>false</CardOpen>
+    <ErrorInfo />
+  </CardPar>
+  <CardPar>
+    <CardNum>0</CardNum>
+    <CardType />
+    <Vendor />
+    <FirstNum>0</FirstNum>
+    <Total>0</Total>
+    <ParmPath />
+    <MainCard>false</MainCard>
+    <CardOpen>false</CardOpen>
+    <ErrorInfo />
+  </CardPar>
+  <CardPar>
+    <CardNum>0</CardNum>
+    <CardType />
+    <Vendor />
+    <FirstNum>0</FirstNum>
+    <Total>0</Total>
+    <ParmPath />
+    <MainCard>false</MainCard>
+    <CardOpen>false</CardOpen>
+    <ErrorInfo />
+  </CardPar>
+  <CardPar>
+    <CardNum>0</CardNum>
+    <CardType />
+    <Vendor />
+    <FirstNum>0</FirstNum>
+    <Total>0</Total>
+    <ParmPath />
+    <MainCard>false</MainCard>
+    <CardOpen>false</CardOpen>
+    <ErrorInfo />
+  </CardPar>
+  <CardPar>
+    <CardNum>0</CardNum>
+    <CardType />
+    <Vendor />
+    <FirstNum>0</FirstNum>
+    <Total>0</Total>
+    <ParmPath />
+    <MainCard>false</MainCard>
+    <CardOpen>false</CardOpen>
+    <ErrorInfo />
+  </CardPar>
+  <CardPar>
+    <CardNum>0</CardNum>
+    <CardType />
+    <Vendor />
+    <FirstNum>0</FirstNum>
+    <Total>0</Total>
+    <ParmPath />
+    <MainCard>false</MainCard>
+    <CardOpen>false</CardOpen>
+    <ErrorInfo />
+  </CardPar>
+</ArrayOfCardPar>

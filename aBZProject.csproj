@@ -1,0 +1,773 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E7441FFE-A42D-4691-B675-42C54DC4A946}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>BoTech</RootNamespace>
+    <AssemblyName>P28_PCBA_Unloading</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>C:\Users\Administrator\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NOWARN>
+    </NOWARN>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+    <Optimize>false</Optimize>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <PreferNativeArm64>false</PreferNativeArm64>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NOWARN>1591,660,661</NOWARN>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>DC9B38B035FA54909B744388478C45536F8F144D</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>BZProject_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>BZ.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NOWARN>1591,660,661</NOWARN>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Optimize>true</Optimize>
+    <NOWARN>1591,660,661</NOWARN>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <GenerateResourceUsePreserializedResources>false</GenerateResourceUsePreserializedResources>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="APPCM, Version=1.3.1.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\APPCM.dll</HintPath>
+    </Reference>
+    <Reference Include="AppHive, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AppHive.dll</HintPath>
+    </Reference>
+    <Reference Include="Atlas, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Atlas.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoConv, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AutoConv.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonServiceLocator, Version=2.0.2.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CommonServiceLocator.dll</HintPath>
+    </Reference>
+    <Reference Include="CoreFunction, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CoreFunction.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ExcelDataReader, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ExcelDataReader.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader.DataSet, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ExcelDataReader.DataSet.dll</HintPath>
+    </Reference>
+    <Reference Include="FunctionPro, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\FunctionPro.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight, Version=5.4.1.0, Culture=neutral, PublicKeyToken=e7570ab207bcb616, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\GalaSoft.MvvmLight.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Extras, Version=5.4.1.0, Culture=neutral, PublicKeyToken=669f0b5e8f868abf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\GalaSoft.MvvmLight.Extras.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Platform, Version=5.4.1.0, Culture=neutral, PublicKeyToken=5f873c45e98af8a1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\GalaSoft.MvvmLight.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="HslCommunication, Version=12.0.3.0, Culture=neutral, PublicKeyToken=3d72ad3b6b5ec0e3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\HslCommunication.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=e313ed72c2e670ed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="JWPTools">
+      <HintPath>..\..\..\..\程序模版\MiniSCUD_3.0.4.2_24060114\bin\Debug\JWPTools.dll</HintPath>
+    </Reference>
+    <Reference Include="LitJSON, Version=0.18.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\LitJSON.dll</HintPath>
+    </Reference>
+    <Reference Include="LogsHelper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\zhang\AppData\Local\Temp\vsB515.tmp\Debug\LogsHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.HashCode, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.HashCode.6.0.0\lib\net462\Microsoft.Bcl.HashCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MotionFunction, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\MotionFunction.dll</HintPath>
+    </Reference>
+    <Reference Include="MotionOTH, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\MotionOTH.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="CalNormDistLabrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CalNormDistLabrary.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=4.5.2.1, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="FilePath, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\FilePath.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mGUI, Version=1.0.6737.29120, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\mGUI.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\程序模版\MiniSCUD_3.0.4.2_24060114\bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="NetDxf, Version=0.6.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NetDxf.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="ParName, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ParName.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Reader, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Reader.dll</HintPath>
+    </Reference>
+    <Reference Include="SocketHelper, Version=4.16.11.28, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SocketHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLiteData, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SQLiteData.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.6.1\lib\net462\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=10.0.0.5, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Collections.Immutable.10.0.5\lib\net462\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>bin\Debug\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Formats.Nrbf, Version=10.0.0.5, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Formats.Nrbf.10.0.5\lib\net462\System.Formats.Nrbf.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Memory, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.6.3\lib\net462\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.6.1\lib\net462\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Metadata, Version=10.0.0.5, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Reflection.Metadata.10.0.5\lib\net462\System.Reflection.Metadata.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Extensions, Version=10.0.0.5, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Resources.Extensions.10.0.5\lib\net462\System.Resources.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.1.2\lib\net462\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Resources.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\System.Resources.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="TaskBase, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\TaskBase.dll</HintPath>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WebServiceAgent, Version=1.1.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\WebServiceAgent.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="XStation, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\XStation.dll</HintPath>
+    </Reference>
+    <Reference Include="Zcm2018, Version=2.1.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Zcm2018.dll</HintPath>
+    </Reference>
+    <Reference Include="Zcm968, Version=2.1.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Zcm968.dll</HintPath>
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ZedGraph, Version=5.1.5.37721, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ZedGraph.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="0.窗体界面ICT\ICT主界面\AlarmPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT主界面\AlarmPage.Designer.cs">
+      <DependentUpon>AlarmPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT主界面\ConfigPageS1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT主界面\ConfigPageS1.Designer.cs">
+      <DependentUpon>ConfigPageS1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT主界面\DataPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT主界面\DataPage.designer.cs">
+      <DependentUpon>DataPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT主界面\FailTip\FailTip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT主界面\FailTip\FailTip.designer.cs">
+      <DependentUpon>FailTip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT主界面\FailTip\FailTipShow.cs" />
+    <Compile Include="0.窗体界面ICT\ICT主界面\FailTip\FailTip不锁定界面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT主界面\FailTip\FailTip不锁定界面.designer.cs">
+      <DependentUpon>FailTip不锁定界面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT主界面\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT主界面\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT主界面\Frm_ICT_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT主界面\Frm_ICT_Main.Designer.cs">
+      <DependentUpon>Frm_ICT_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT主界面\HomePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT主界面\HomePage.designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT主界面\ManuallyLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT主界面\ManuallyLogin.designer.cs">
+      <DependentUpon>ManuallyLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT主界面\SettingPageS1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT主界面\SettingPageS1.designer.cs">
+      <DependentUpon>SettingPageS1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT主界面\VisionPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT主界面\VisionPage.Designer.cs">
+      <DependentUpon>VisionPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT自定义控件\AlarmLogShow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT自定义控件\AlarmLogShow.Designer.cs">
+      <DependentUpon>AlarmLogShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT自定义控件\Alarm_Duration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT自定义控件\Alarm_Duration.Designer.cs">
+      <DependentUpon>Alarm_Duration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT自定义控件\Audiobutton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT自定义控件\ChartIO_Update_NoSQL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT自定义控件\ChartIO_Update_NoSQL.designer.cs">
+      <DependentUpon>ChartIO_Update_NoSQL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT自定义控件\CriticalPameterDashBoard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT自定义控件\CriticalPameterDashBoard.Designer.cs">
+      <DependentUpon>CriticalPameterDashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT自定义控件\DoubleTrackBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT自定义控件\DT Statiistic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT自定义控件\DT Statiistic.Designer.cs">
+      <DependentUpon>DT Statiistic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT自定义控件\FormHardwareSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT自定义控件\FormHardwareSetting.Designer.cs">
+      <DependentUpon>FormHardwareSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT自定义控件\FrmLogOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT自定义控件\FrmLogOut.Designer.cs">
+      <DependentUpon>FrmLogOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT自定义控件\HashKey\UserManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT自定义控件\HashKey\UserManager.Designer.cs">
+      <DependentUpon>UserManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT自定义控件\IO_Summary_NoSQL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT自定义控件\IO_Summary_NoSQL.Designer.cs">
+      <DependentUpon>IO_Summary_NoSQL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT自定义控件\MyControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="3.自定义类\User_Control\流线控制.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="3.自定义类\User_Control\流线控制.Designer.cs">
+      <DependentUpon>流线控制.cs</DependentUpon>
+    </Compile>
+    <Compile Include="3.自定义类\XAlarm\Hive\BLL\HaveSerciceBLL.cs" />
+    <Compile Include="3.自定义类\XAlarm\Hive\Common\AlarmInfo.cs" />
+    <Compile Include="3.自定义类\干涉区\InterferenceZoneFactory.cs" />
+    <Compile Include="4.辅助功能\1.基本功能\A3.委托响应.cs" />
+    <Compile Include="4.辅助功能\Help\AxisHelper.cs" />
+    <Compile Include="4.辅助功能\Help\ConveyorHelper.cs" />
+    <Compile Include="4.辅助功能\Help\LanguageHelper.cs" />
+    <Compile Include="4.辅助功能\Help\ParHelper.cs" />
+    <Compile Include="4.辅助功能\Help\PosHelper.cs" />
+    <Compile Include="4.辅助功能\Help\YelidHelper.cs" />
+    <Compile Include="5.运动模块\移载平台Base.cs" />
+    <Compile Include="5.运动模块\下料Base.cs" />
+    <Compile Include="5.运动模块\上料Base.cs" />
+    <Compile Include="5.运动模块\Task00_空站.cs" />
+    <Compile Include="5.运动模块\Task06_R下料.cs" />
+    <Compile Include="5.运动模块\Task02_R上料.cs" />
+    <Compile Include="5.运动模块\Task05_L下料.cs" />
+    <Compile Include="5.运动模块\Task01_L上料.cs" />
+    <Compile Include="5.运动模块\Task04_R移载平台.cs" />
+    <Compile Include="5.运动模块\Task03_L移载平台.cs" />
+    <Compile Include="ICT归纳块\Alarm\AlarmInfomation.cs" />
+    <Compile Include="ICT归纳块\Alarm\TaskAlarmFailTipInfo.cs" />
+    <Compile Include="ICT归纳块\DataManager\DataFormatClass.cs" />
+    <Compile Include="ICT归纳块\Enum\eErrCode.cs" />
+    <Compile Include="ICT归纳块\ExtendVoid.cs" />
+    <Compile Include="ICT归纳块\File\CsvServer_ICT.cs" />
+    <Compile Include="ICT归纳块\File\DataSave.cs" />
+    <Compile Include="ICT归纳块\File\EPPlusHelper.cs" />
+    <Compile Include="ICT归纳块\File\mFileJson.cs" />
+    <Compile Include="ICT归纳块\GlobalVoid.cs" />
+    <Compile Include="ICT归纳块\LoginUser\AccountInfo.cs" />
+    <Compile Include="ICT归纳块\LoginUser\AudioLoginManager.cs" />
+    <Compile Include="ICT归纳块\LoginUser\BardCodeHooK.cs" />
+    <Compile Include="ICT归纳块\LoginUser\LoginData.cs" />
+    <Compile Include="0.窗体界面ICT\ICT自定义控件\LoginManager\Login_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT自定义控件\LoginManager\Login_Page.Designer.cs">
+      <DependentUpon>Login_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT自定义控件\MachineErrorStatistics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT自定义控件\MachineErrorStatistics.designer.cs">
+      <DependentUpon>MachineErrorStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT自定义控件\MachineStateChanges.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT自定义控件\MachineStateChanges.designer.cs">
+      <DependentUpon>MachineStateChanges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT自定义控件\STN.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="0.窗体界面ICT\ICT自定义控件\STN.designer.cs">
+      <DependentUpon>STN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2.界面状态\1.配置加载.cs" />
+    <Compile Include="4.辅助功能\1.基本功能\A0.工位加载.cs" />
+    <Compile Include="4.辅助功能\4.mTaskManager.cs" />
+    <Compile Include="4.辅助功能\5.mWorkShare.cs" />
+    <Compile Include="3.自定义类\XAlarm\ErrCode.cs" />
+    <Compile Include="3.自定义类\XAlarm\XAlarmServer.cs" />
+    <Compile Include="4.辅助功能\6.mEnum.cs" />
+    <Compile Include="2.界面状态\4.状态监控.cs" />
+    <Compile Include="4.辅助功能\0.通用变量.cs" />
+    <Compile Include="ICT归纳块\Enum\Enum 机种名称.cs" />
+    <Compile Include="ICT归纳块\File\DataServer\DataSeverManager.cs" />
+    <Compile Include="ICT归纳块\File\SqlManager\DataBaseHelper.cs" />
+    <Compile Include="ICT归纳块\File\SqlManager\SQLiteHelper.cs" />
+    <Compile Include="ICT归纳块\LoginUser\MouseHelper.cs" />
+    <Compile Include="ICT归纳块\Variable\GlobalUserInfoGet.cs" />
+    <Compile Include="ICT归纳块\Variable\GlobalVariable.cs" />
+    <Compile Include="4.辅助功能\2.网络通讯.cs" />
+    <Compile Include="4.辅助功能\3.自定函数.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Application.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="4.辅助功能\1.基本功能\A1.Home.cs" />
+    <Compile Include="2.界面状态\2.复位判断.cs" />
+    <Compile Include="2.界面状态\3.自动运行.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="0.窗体界面ICT\ICT主界面\AlarmPage.resx">
+      <DependentUpon>AlarmPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0.窗体界面ICT\ICT主界面\ConfigPageS1.en-US.resx">
+      <DependentUpon>ConfigPageS1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0.窗体界面ICT\ICT主界面\ConfigPageS1.resx">
+      <DependentUpon>ConfigPageS1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0.窗体界面ICT\ICT主界面\DataPage.resx">
+      <DependentUpon>DataPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0.窗体界面ICT\ICT主界面\FailTip\FailTip.resx">
+      <DependentUpon>FailTip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0.窗体界面ICT\ICT主界面\FailTip\FailTip不锁定界面.resx">
+      <DependentUpon>FailTip不锁定界面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0.窗体界面ICT\ICT主界面\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0.窗体界面ICT\ICT主界面\Frm_ICT_Main.resx">
+      <DependentUpon>Frm_ICT_Main.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0.窗体界面ICT\ICT主界面\HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0.窗体界面ICT\ICT主界面\ManuallyLogin.resx">
+      <DependentUpon>ManuallyLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0.窗体界面ICT\ICT主界面\SettingPageS1.en-US.resx">
+      <DependentUpon>SettingPageS1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0.窗体界面ICT\ICT主界面\SettingPageS1.resx">
+      <DependentUpon>SettingPageS1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0.窗体界面ICT\ICT主界面\VisionPage.resx">
+      <DependentUpon>VisionPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0.窗体界面ICT\ICT自定义控件\AlarmLogShow.resx">
+      <DependentUpon>AlarmLogShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0.窗体界面ICT\ICT自定义控件\Alarm_Duration.resx">
+      <DependentUpon>Alarm_Duration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0.窗体界面ICT\ICT自定义控件\ChartIO_Update_NoSQL.resx">
+      <DependentUpon>ChartIO_Update_NoSQL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0.窗体界面ICT\ICT自定义控件\CriticalPameterDashBoard.resx">
+      <DependentUpon>CriticalPameterDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0.窗体界面ICT\ICT自定义控件\DT Statiistic.resx">
+      <DependentUpon>DT Statiistic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0.窗体界面ICT\ICT自定义控件\FormHardwareSetting.resx">
+      <DependentUpon>FormHardwareSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0.窗体界面ICT\ICT自定义控件\FrmLogOut.resx">
+      <DependentUpon>FrmLogOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0.窗体界面ICT\ICT自定义控件\HashKey\UserManager.resx">
+      <DependentUpon>UserManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0.窗体界面ICT\ICT自定义控件\IO_Summary_NoSQL.resx">
+      <DependentUpon>IO_Summary_NoSQL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0.窗体界面ICT\ICT自定义控件\LoginManager\Login_Page.resx">
+      <DependentUpon>Login_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0.窗体界面ICT\ICT自定义控件\MachineErrorStatistics.resx">
+      <DependentUpon>MachineErrorStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0.窗体界面ICT\ICT自定义控件\MachineStateChanges.resx">
+      <DependentUpon>MachineStateChanges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="0.窗体界面ICT\ICT自定义控件\STN.resx">
+      <DependentUpon>STN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3.自定义类\User_Control\流线控制.resx">
+      <DependentUpon>流线控制.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".editorconfig" />
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="0.窗体界面ICT\ICTicon\Alarm_Alerted.png" />
+    <Content Include="0.窗体界面ICT\ICTicon\Alarm_De_energized.png" />
+    <Content Include="0.窗体界面ICT\ICTicon\Alarm_Disabled.png" />
+    <Content Include="0.窗体界面ICT\ICTicon\Alarm_Energized.png" />
+    <Content Include="0.窗体界面ICT\ICTicon\Audio_Logo.png" />
+    <Content Include="0.窗体界面ICT\ICTicon\Config_De_energized.png" />
+    <Content Include="0.窗体界面ICT\ICTicon\Config_Disabled.png" />
+    <Content Include="0.窗体界面ICT\ICTicon\Config_Energized.png" />
+    <Content Include="0.窗体界面ICT\ICTicon\Data_De_energized.png" />
+    <Content Include="0.窗体界面ICT\ICTicon\Data_Disabled.png" />
+    <Content Include="0.窗体界面ICT\ICTicon\Data_Energized.png" />
+    <Content Include="0.窗体界面ICT\ICTicon\HIVE_Disabled.png" />
+    <Content Include="0.窗体界面ICT\ICTicon\HIVE_DT.png" />
+    <Content Include="0.窗体界面ICT\ICTicon\HIVE_Engineering.png" />
+    <Content Include="0.窗体界面ICT\ICTicon\HIVE_Idle.png" />
+    <Content Include="0.窗体界面ICT\ICTicon\HIVE_Plan_DT.png" />
+    <Content Include="0.窗体界面ICT\ICTicon\HIVE_Running.png" />
+    <Content Include="0.窗体界面ICT\ICTicon\Home_De_energized.png" />
+    <Content Include="0.窗体界面ICT\ICTicon\Home_Disabled.png" />
+    <Content Include="0.窗体界面ICT\ICTicon\Home_Energized.png" />
+    <Content Include="0.窗体界面ICT\ICTicon\Level1.png" />
+    <Content Include="0.窗体界面ICT\ICTicon\Level2.png" />
+    <Content Include="0.窗体界面ICT\ICTicon\Level3.png" />
+    <Content Include="0.窗体界面ICT\ICTicon\No_login.png" />
+    <Content Include="0.窗体界面ICT\ICTicon\Paused_De_energized.png" />
+    <Content Include="0.窗体界面ICT\ICTicon\Paused_Disabled.png" />
+    <Content Include="0.窗体界面ICT\ICTicon\Paused_Energized.png" />
+    <Content Include="0.窗体界面ICT\ICTicon\Running_De_energized.png" />
+    <Content Include="0.窗体界面ICT\ICTicon\Running_Disabled.png" />
+    <Content Include="0.窗体界面ICT\ICTicon\Running_Energized.png" />
+    <Content Include="0.窗体界面ICT\ICTicon\Setting_De_energized.png" />
+    <Content Include="0.窗体界面ICT\ICTicon\Setting_Disabled.png" />
+    <Content Include="0.窗体界面ICT\ICTicon\Setting_Energized.png" />
+    <Content Include="0.窗体界面ICT\ICTicon\Stopped_De_energized.png" />
+    <Content Include="0.窗体界面ICT\ICTicon\Stopped_Disabled.png" />
+    <Content Include="0.窗体界面ICT\ICTicon\Stopped_Energized.png" />
+    <Content Include="0.窗体界面ICT\ICTicon\Vision_De_energized.png" />
+    <Content Include="0.窗体界面ICT\ICTicon\Vision_Disabled.png" />
+    <Content Include="0.窗体界面ICT\ICTicon\Vision_Energized.png" />
+    <Content Include="BZ.ico" />
+    <Content Include="RBFX.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="辅助工程\L.ParamManag\L.ParamManag.csproj">
+      <Project>{2a08bbe4-c02e-488b-b323-9bea90ea3c87}</Project>
+      <Name>L.ParamManag</Name>
+    </ProjectReference>
+    <ProjectReference Include="辅助工程\UserHelper\UserHelper.csproj">
+      <Project>{9b673c26-241e-457e-a0d4-0ef824761ade}</Project>
+      <Name>UserHelper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Import Project="$(MSBuildBinPath)/Microsoft.CSharp.targets" />
+  <Import Project="packages\System.ValueTuple.4.6.1\build\net471\System.ValueTuple.targets" Condition="Exists('packages\System.ValueTuple.4.6.1\build\net471\System.ValueTuple.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\System.ValueTuple.4.6.1\build\net471\System.ValueTuple.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\System.ValueTuple.4.6.1\build\net471\System.ValueTuple.targets'))" />
+  </Target>
+</Project>

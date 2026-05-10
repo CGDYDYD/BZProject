@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Label178.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label177.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label175.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label173.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label157.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label156.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label176.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label174.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label254.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label155.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Btn_ParBackup.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Btn_ParSave.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Btn_ParKeyboard.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAARCHAAEQhwGS/GQNAAAAAmJL
+        R0QA/4ePzL8AAAAldEVYdGRhdGU6Y3JlYXRlADIwMTMtMDQtMTFUMDA6NDI6NDgrMDg6MDBFmm5yAAAA
+        JXRFWHRkYXRlOm1vZGlmeQAyMDEzLTA0LTExVDAwOjQyOjQ4KzA4OjAwNMfWzgAAAE10RVh0c29mdHdh
+        cmUASW1hZ2VNYWdpY2sgNi44LjgtNyBRMTYgeDg2XzY0IDIwMTQtMDItMjggaHR0cDovL3d3dy5pbWFn
+        ZW1hZ2ljay5vcmdZpF9/AAAAGHRFWHRUaHVtYjo6RG9jdW1lbnQ6OlBhZ2VzADGn/7svAAAAGHRFWHRU
+        aHVtYjo6SW1hZ2U6OkhlaWdodAA1MTKPjVOBAAAAF3RFWHRUaHVtYjo6SW1hZ2U6OldpZHRoADUxMhx8
+        A9wAAAAZdEVYdFRodW1iOjpNaW1ldHlwZQBpbWFnZS9wbmc/slZOAAAAF3RFWHRUaHVtYjo6TVRpbWUA
+        MTM2NTYxMjE2OMS8W6kAAAATdEVYdFRodW1iOjpTaXplADcuNzhLQkJgJUF0AAAAYnRFWHRUaHVtYjo6
+        VVJJAGZpbGU6Ly8vaG9tZS9mdHAvMTUyMC9lYXN5aWNvbi5jbi9lYXN5aWNvbi5jbi9jZG4taW1nLmVh
+        c3lpY29uLmNuL3BuZy8xMTAxNi8xMTAxNjU3LnBuZ3Uq2f8AAAQMSURBVGhD7ZlLiI5RGMfHrUYG5ZIk
+        wiQLWY1ScomkLGwsXHfSyGUSFuxsrcgCZeOubFw3blkoKWpKGQtkhUSU+2WM8f99nkePzzvzfTPffOO8
+        +qb+nfOd83/P83/Oe57nPedMXV0if01NTXXCBOGAsFsYTltu/syBbSo7hS/C8jw6cNAcwImNuXHAZp8l
+        dMQc6FC5Jm8OjJTg2+bAO5Vz8ubAYgl+aw48UDk+eQfC0pmu+o2w/vd7XzJZyAQNUjlGmCksFcg6h4WH
+        QfxT1WcnM/smfITKZcJR4Z7wSvgaRJN1wGthXRKzH5bHVNXPCp8zBLvwj+q7KiwReEv/fuWYA+NUXgnC
+        f6j+xt7CRZX7hM3CIoG3RCpNRjxidgjkdGYa4XuEWcJoYUgygounzISNVdlq4r+p3CIMTGKGS71jc2CB
+        yvfmwB2VZJ9Sj6bRbw6sN/EsH1JlGuu7nCkysbuCAzurOvtmcIBKUt5KgZ1gJdig5y8HB06r3lzhmOhZ
+        YRrR+msuTTwpbLvwWPgeDHueTqVEGxrRWki7OFAv7BXaExZePIFoRXM9DvBqP+RIvDuD5mYc8FydyjLp
+        iY5WHMhaOrR9CuBryjaA/Yy3c27FWDHXY4j+Yi59cVy3HbnYwBY2s7jRwXYcyPL4vNrnC3yM2GCxg2Qr
+        wDFvnjBX2Cog6ELgLlT9urXTDy9y6YPDuIzPs4zhXMbGhu+XsO1cNP2ltSsHOFx7hhqq+k3hhdAY2hmY
+        GTwU2tgqkDLZOtDvY1Cnjb7CdsLAs4wRudjAFjax7dx44P/tyH/rQO6XkAcmpybqBJUHMUHGcvBgzeL6
+        5VQx14OYoGUM32rz27ke2OUEcWdXS8jX2F0NfMpwTiW5F/CGWM8nBTjwnUv7GeGlQBYhUJ17y7iPrC1y
+        ceCStWPTk0G3abWUA5ssiNh7TBSeGKgX9iMCHIw4lyAdJhCEz4TJxoO71rgEL89HLoE7LXDJVkxARQ4U
+        rvcMXLy6A9S9HQ5GItczFw5MCtzVxi03y9UcYBlw3c2MHRO4OePa77i10QeHNxC5HGCeC8TLicC9Ztz7
+        1sa4zmW2Wfu0MS5xVnKD2VUMlJOF4AAyFcY9Y3k7QRkzS+SSdZxHWcxlQirKQqW+A3w5q4H+2UqUc6zs
+        DUeTwopoFKq7leiNuHKe6UsHCCbOx8zGDIFrEe4zuUGbYu309TUYGxvYwia2sYEWNGXuRv1zHjvJHtwS
+        A3I5AQqPV+vt1SqxgS1sYtvtZJ0aO1hzbVme5aStDQdahO5ujntyxOtPLppbcKBB4MORtZT6U1BPbKEV
+        zQ2+nxmlH9wcs+ZSvxdCI1rR/Mfl1mA18L8qNlzsLCu5mavWs6tMI1rLycw1Tm0GajOQ+gz8BP59F2RQ
+        y4STAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="Btn_ParKeyboard.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Btn_ParEnable.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+</root>
