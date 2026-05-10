@@ -407,32 +407,32 @@ namespace BoTech
 
         private void StatusTimer_Tick(object sender, EventArgs e)
         {
-            //if (!FormLoad)
-            //{
-            //    return;
-            //}
-            //if (mGlobal.isManaul)
-            //{
-            //    LightStatus = mGlobal.IsOnAlarm ? (short)LightEnum.手动模式故障报警 : (short)LightEnum.手动模式调试状态;
-            //}
-            //else if (mGlobal.IsOnAlarm)
-            //{
-            //    LightStatus = (short)LightEnum.运行中报警;
-            //}
-            //else if (SysState == State.RUNNING)
-            //{
-            //    LightStatus = (short)LightEnum.自动运行中;
-            //}
-            //else if (SysState == State.PAUSE)
-            //{
-            //    LightStatus = (short)LightEnum.自动模式等待启动状态;
-            //}
-            //else if (SysState == State.WAITRUN)
-            //{
-            //    LightStatus = (short)LightEnum.自动模式等待启动状态;
-            //}
-            //StatusTimer.Enabled = true;
-            //CheckAlarm.Enabled = true;
+            if (!FormLoad)
+            {
+                return;
+            }
+            if (mGlobal.isManaul)
+            {
+                LightStatus = mGlobal.IsOnAlarm ? (short)LightEnum.手动模式故障报警 : (short)LightEnum.手动模式调试状态;
+            }
+            else if (mGlobal.IsOnAlarm)
+            {
+                LightStatus = (short)LightEnum.运行中报警;
+            }
+            else if (SysState == State.RUNNING)
+            {
+                LightStatus = (short)LightEnum.自动运行中;
+            }
+            else if (SysState == State.PAUSE)
+            {
+                LightStatus = (short)LightEnum.自动模式等待启动状态;
+            }
+            else if (SysState == State.WAITRUN)
+            {
+                LightStatus = (short)LightEnum.自动模式等待启动状态;
+            }
+            StatusTimer.Enabled = true;
+            CheckAlarm.Enabled = true;
         }
 
         private void CheckAlarm_Tick(object sender, EventArgs e)
@@ -475,22 +475,22 @@ namespace BoTech
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            //try
-            //{
-            //    this.Invoke(new Action(() =>
-            //    {
-            //        this.label4.Text = SysState.ToString();
-            //        //this.label_手自动.Text = EnglishMode ? mGlobal.isManaul ? "Manual" : "Auto" : mGlobal.isManaul ? "手动模式" : "自动模式";
-            //        //this.label_手自动.BackColor = mGlobal.isManaul ? Color.Red : Color.LightGreen;
-            //        this.label13.Text = EnglishMode ? "" : ((LightEnum)LightStatus).ToString();
-            //        //this.panel_点位调试.Visible = !EnglishMode;
-            //        Label_MachineStatus.Text = StringHelper.SplitByLanguage(GetParValue<string>(名称枚举.UserPar.机器运行模式))[EnglishMode ? 0 : 1];
-            //    }));
-            //}
-            //catch (Exception ex)
-            //{
-            //    DebugHelper.WriteLine(ex);
-            //}
+            try
+            {
+                this.Invoke(new Action(() =>
+                {
+                    this.label4.Text = SysState.ToString();
+                    //this.label_手自动.Text = EnglishMode ? mGlobal.isManaul ? "Manual" : "Auto" : mGlobal.isManaul ? "手动模式" : "自动模式";
+                    //this.label_手自动.BackColor = mGlobal.isManaul ? Color.Red : Color.LightGreen;
+                    this.label13.Text = EnglishMode ? "" : ((LightEnum)LightStatus).ToString();
+                    //this.panel_点位调试.Visible = !EnglishMode;
+                    Label_MachineStatus.Text = StringHelper.SplitByLanguage(GetParValue<string>(名称枚举.UserPar.机器运行模式))[EnglishMode ? 0 : 1];
+                }));
+            }
+            catch (Exception ex)
+            {
+                DebugHelper.WriteLine(ex);
+            }
         }
 
 
